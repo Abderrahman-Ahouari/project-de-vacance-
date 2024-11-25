@@ -1,0 +1,32 @@
+.main_container{
+display: grid;
+grid-template-columns: 120px 1fr;
+grid-template-rows: auto auto auto auto;
+grid-template-areas: "avatar info" "bio bio" "table table" "links links";
+
+}
+.avatar{
+    grid-area: avatar;
+}
+.info{
+    grid-area: info;
+}
+.bio{
+    grid-area: bio;
+}
+.table{
+    grid-area: table;
+}
+.links{
+     grid-area: links;
+}
+
+@media (min-width: 1024px){
+    .main_container{
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: "avatar info" "avatar bio" "avatar table" "avatar links";
+        
+        }
+}
